@@ -6,6 +6,15 @@
       .titulo-principal__numero(data-aos="fade-right")
         span 3
       h1 Titulo_de_primer_nivel
+    separador
+    #t_3_1.titulo-segundo.color-acento-contenido(data-aos="flip-up")
+      h2 3.1 
+    separador
+    #t_3_2.titulo-segundo.color-acento-contenido(data-aos="flip-up")
+      h2 3.2 
+    separador
+    #t_3_3.titulo-segundo.color-acento-contenido(data-aos="flip-up")
+      h2 3.3 
 
 </template>
 

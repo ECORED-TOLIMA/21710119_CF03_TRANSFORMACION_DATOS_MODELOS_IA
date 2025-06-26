@@ -1,8 +1,10 @@
 export default {
   global: {
-    componenteFormativo: 'Nombre_del_recurso_educativo',
-    descripcionCurso: 'Descripción_del_RED',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.svg'),
+    componenteFormativo:
+      'Visualización, partición y automatización en el procesamiento de datos',
+    descripcionCurso:
+      'Este componente aborda el ciclo de vida del aprendizaje automático, incluyendo la limpieza, transformación y evaluación de datos. Presenta técnicas de modelado, automatización de procesos, visualización de resultados y buenas prácticas para la gestión eficiente de datos en proyectos de inteligencia artificial.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
@@ -11,7 +13,7 @@ export default {
       },
       {
         clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.png'),
       },
     ],
   },
@@ -31,13 +33,25 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Titulo_de_primer_nivel',
+        titulo:
+          'Preparación de datos en el ciclo de vida del aprendizaje automático',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Titulo_de_segundo_nivel',
+            titulo: 'El ciclo de vida del aprendizaje automático',
             hash: 't_1_1',
+          },
+          {
+            numero: '1.2',
+            titulo:
+              'Limpieza y transformación de datos: codificación, normalización y enriquecimiento',
+            hash: 't_1_2',
+          },
+          {
+            numero: '1.3',
+            titulo: 'Tratamiento de valores atípicos',
+            hash: 't_1_3',
           },
         ],
       },
@@ -45,14 +59,46 @@ export default {
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Titulo_de_primer_nivel',
+        titulo: 'Técnicas de partición y balanceo de datos para el modelado',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '2.1',
+            titulo:
+              'Métodos de partición: <em>hold-out</em>, <em>k-fold</em> y muestreo estratificado',
+            hash: 't_2_1',
+          },
+          {
+            numero: '2.2',
+            titulo: 'Evaluación del rendimiento en conjuntos balanceados',
+            hash: 't_2_2',
+          },
+        ],
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Titulo_de_primer_nivel',
+        titulo:
+          'Automatización y visualización de procesos de transformación de datos',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '3.1',
+            titulo: '¿Qué es un <em>pipeline</em> de datos y para qué sirve?',
+            hash: 't_3_1',
+          },
+          {
+            numero: '3.2',
+            titulo:
+              'Automatización de flujos con Scikit-learn <em>Pipelines</em> y <em>MLflow</em>',
+            hash: 't_3_2',
+          },
+          {
+            numero: '3.3',
+            titulo: 'Buenas prácticas para automatizar la gestión de datos',
+            hash: 't_3_3',
+          },
+        ],
       },
     ],
     subMenu: [
