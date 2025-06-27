@@ -121,7 +121,7 @@ figcaption
 .tarjeta.tarjeta--gris
   background-color: #CFDBDE
 .tarjeta.tarjeta--azul
-  background-color: #D4FEFA
+  background-color: #D4FEFA !important 
 
 .bloque-texto-g.color-primario
   background-color: #6CDFD4
@@ -162,6 +162,29 @@ figcaption
   margin-inline: -3rem !important
   @media (max-width: $bp-max-sm)
     margin-inline: -1.5rem !important
+.tarjeta--BG03
+  background-image: url("../assets/curso/temas/tema2/imgfondoslyder.png")
+  background-size: cover 
+  background-repeat: no-repeat
+  background-position: center
+  @media (max-width: $bp-max-sm)
+    margin-inline: -1.5rem !important
+.tarjeta--BG04
+  background-image: url("../assets/curso/temas/tema3/imgfondoslyf.png")
+  background-size: cover 
+  background-repeat: no-repeat
+  background-position: center
+  margin-inline: -3rem !important
+  @media (max-width: $bp-max-sm)
+    margin-inline: -1.5rem !important
+.BGGRA
+  background: #FFFFFF
+  background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(212, 254, 250, 1) 42%, rgba(227, 254, 252, 1) 64%, rgba(255, 255, 255, 1) 100%)
+  background-position: center
+  margin-inline: -3rem !important
+  @media (max-width: $bp-max-sm)
+    margin-inline: -1.5rem !important
+
 .tarjeta.color5
   background-color: #E7FDEB !important
 
@@ -194,9 +217,27 @@ table thead
   table
     th
       background-color: #CFDBDE
+table
+  td
+    text-align: left
+    
 .slyder-f__btn i
    color: #870524
-  
+.slyder-a__bullets__item
+  background-color: #CBC4F8
+.slyder-a__bullets__item--active
+  background-color: #870524
+  border-color: #870524
+
+.slyder-a__btn--sigt, .slyder-a__btn--atrs
+  background-color: #870524
+  //background-image: url(img/arrow.813beb4d.svg)
+  border: 1px solid #870524
+  opacity: 1
+.slyder-a__tipo-b .slyder-a__btn--sigt
+  transform: rotate(0deg) !important
+.slyder-a__tipo-b .slyder-a__btn--atrs
+    transform: rotate(178deg)
 .lista-ul li, ol.lista-ol li, .lista-ul--color li, .ol.lista-ol--cuadro li, .lista-ol--cuadro li, .lista-ul--separador li
   display: flex
 .lista-ol--cuadro__vineta
@@ -209,3 +250,231 @@ table thead
 
 .ft
   font-family: 'Roboto'
+///////// Card hover --------------------------------------
+//- tarjeta de deslizamiento arriba abajo 
+.tarjetas-up
+  overflow: hidden
+  border-radius: 5px
+  position: relative
+  &_card
+    transition: bottom .3s ease-in-out
+    position: absolute
+    border-radius: 5px
+    width: 100%
+    height: 100%
+    left: 0
+    bottom: -82%
+    @media (max-width: $bp-max-lg)
+      bottom: -85%
+    @media (max-width: $bp-max-md)
+      bottom: -87%
+    @media (max-width: $bp-max-sm)
+      bottom: -85%
+    i:last-child
+      display: none
+  &:hover
+    .tarjetas-up_card
+      bottom: -40%
+      @media (max-width: $bp-max-xl)
+        bottom: -20%
+      @media (max-width: $bp-max-lg)
+        bottom: -30%
+      @media (max-width: $bp-max-md)
+        bottom: -47%
+      @media (max-width: $bp-max-sm)
+        bottom: -38%
+      @media (max-width: $bp-max-xs)
+        bottom: -20%
+    i:first-child
+      display: none
+    i:last-child
+      display: block
+
+.crd
+  &.brd--rad
+    border-radius: 20px 
+  &.crd--grayGrad
+    padding: 2rem
+    height: 100%
+    //background-image: url('../assets/curso/temas/BG02.svg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    height: 100%
+    border-radius: 15px    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    &:hover      
+      background: linear-gradient(180deg, rgba(25,137,226,1) 0%, rgba(10,81,139,1) 100%)  
+      //background-image: url('../assets/curso/temas/BG03.svg')
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+      .bottomCircle
+        &::before
+          background-color: #EFB499
+  &.crd--blue
+    background-color: #B1DBEA
+
+  &.crd--border
+    border: 4px solid $color-acento-botones
+    border-radius: 20px
+
+.bottomCircle
+  position: relative
+  & > *
+    position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 115px
+    height: 115px
+    background-color: #09614D
+    border-radius: 999px
+
+.crd--avatarHorizontal
+  position: relative
+  padding-right: 12rem
+  & > *
+    position: relative
+  h5 
+    color: #7F4FC7
+  p 
+    margin-bottom: 0
+  &::before  
+    position: absolute 
+    content: ''
+    top: 0
+    right: 0
+    width: calc( 100% - 60px)
+    height: 100%
+    background-color: #C5E5FE
+
+  @media (max-width: 1000px)
+    padding-right: 2rem
+
+.crd--first, .crd--last
+  &::before 
+    background-color: #DDEDF8 !important
+
+.crd--first
+  &::before 
+    border-top-left-radius: 30px
+.crd--last
+  &::before 
+    border-bottom-left-radius: 30px
+
+.crd_hover_txt
+  position: relative  
+  padding: 0 !important
+  overflow: hidden !important  
+  &:hover    
+    .crd_hover_txt--body   
+      transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1) 
+      transform: translateY(0)
+      background-color: #E7FDEB
+
+.crd_hover_txt--body
+  position: absolute
+  padding: 1.5rem
+  bottom: 0    
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1)
+  transform: translateY(calc( 100% - 3.85rem ))
+  
+  
+@media (min-width:1200px) and (max-width:1400px)  
+  .crd_hover_txt--body
+    p
+      font-size: 0.85em
+
+
+.crd
+  &.brd--rad
+    border-radius: 20px 
+  &.crd--grayGrad
+    padding: 2rem
+    height: 100%
+    background-color: #F6F6F6
+    border-radius: 15px    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    &:hover      
+      background: linear-gradient(180deg, rgba(25,137,226,1) 0%, rgba(10,81,139,1) 100%)
+      h4, p
+        color: white 
+      .bottomCircle
+        &::before
+          background-color: #FED981
+  &.crd--blue
+    background-color: #B1DBEA
+
+  &.crd--border
+    border: 4px solid $color-acento-botones
+    border-radius: 20px
+
+.bottomCircle
+  position: relative
+  & > *
+    position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 115px
+    height: 115px
+    background-color: #116EB9
+    border-radius: 999px
+
+.crd--avatarHorizontal
+  position: relative
+  padding-right: 12rem
+  & > *
+    position: relative
+  p 
+    margin-bottom: 0
+  &::before  
+    position: absolute 
+    content: ''
+    top: 0
+    right: 0
+    width: calc( 100% - 60px)
+    height: 100%
+    background-color: #D1F3F5
+
+  @media (max-width: 1000px)
+    padding-right: 2rem
+
+.crd--first, .crd--last
+  &::before 
+    background-color: #DEECFB !important
+
+.crd--first
+  &::before 
+    border-top-left-radius: 30px
+.crd--last
+  &::before 
+    border-bottom-left-radius: 30px
+
+.acordion__accion.acordion__accion__btn--b
+  background-color: white
+  color: $color-acento-botones
+  margin-top: -11px
+  border: $color-acento-botones
+
+.ubicar h4
+  margin-top: -34px
+  margin-left: 55px
+
+.tit-tarj
+  margin-top: -35px
+  background-color: $color-acento-botones
+  height: 60px
+  border-radius: 20px
+
+i.fas.fa-angle-up
+  color: #870524
+.tarjeta .tarjeta--azul
+  background-color: #CFDBDE
