@@ -66,10 +66,10 @@
                 .col-lg-8.col-4
                   img(src='@/assets/curso/temas/tema3/img9.svg' alt='AvatarTop')
               p.text-center Preparación y visualización de resultados, facilitando la interpretación y la toma de decisiones por parte de usuarios o clientes.
-    .row.justify-content-center.align-items-center.mb-5
+    .row.justify-content-center.align-items-center
       .col-lg-10
         .cajon.color-primario.p-4
-          p El propósito principal de un #[i pipeline] de datos es garantizar que la información fluya de manera ordenada, eficiente y reproducible desde su origen hasta su uso final, permitiendo generar valor a partir de datos crudos. Además, facilita la escalabilidad del proceso, mejora la calidad de los datos y reduce los errores manuales en tareas repetitivas.
+          p.mb-0 El propósito principal de un #[i pipeline] de datos es garantizar que la información fluya de manera ordenada, eficiente y reproducible desde su origen hasta su uso final, permitiendo generar valor a partir de datos crudos. Además, facilita la escalabilidad del proceso, mejora la calidad de los datos y reduce los errores manuales en tareas repetitivas.
     separador
     #t_3_2.titulo-segundo.color-acento-contenido(data-aos="flip-up")
       h2 3.2 Automatización de flujos con Scikit-learn #[i pipelines] y MLflow
