@@ -69,8 +69,8 @@
     separador
     #t_2_2.titulo-segundo.color-acento-contenido(data-aos="flip-up")
       h2 2.2 Evaluación del rendimiento en conjuntos balanceados
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-3.col-md-6.col-sm-4.mb-md-4.mb-sm-4
+    .row.justify-content-center.align-items-center.mb-3
+      .col-lg-3.col-md-6.col-sm-4.mb-md-4.mb-sm-4.col-6.mb-4
         figure
           img(src='@/assets/curso/temas/tema2/img8.svg', alt='Texto que describa la imagen')
       .col-lg-9
@@ -130,7 +130,7 @@
         .col-lg-10
           .cajon.color-primario.p-4
             .row.justify-content-center.align-items-center
-              .col-lg-2
+              .col-lg-2.col-6.mb-4
                 figure
                   img(src='@/assets/curso/temas/tema2/img12.svg', alt='')
               .col-lg-10

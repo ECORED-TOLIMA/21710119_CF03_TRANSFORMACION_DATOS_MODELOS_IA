@@ -6,8 +6,8 @@
       .titulo-principal__numero
         span 1
       h1 Preparación de datos en el ciclo de vida del aprendizaje automático
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-5.col-md-10.mb-md-4
+    .row.justify-content-center.align-items-center.mb-4
+      .col-lg-5.col-md-10.mb-md-4.mb-4
         figure
           img(src='@/assets/curso/temas/tema1/img1.png', alt='')
       .col-lg-7
@@ -34,51 +34,51 @@
       .col-lg-10
         LineaTiempoD.color-acento-botones.mb-4
           .row(numero="A" titulo="Obtención de datos")
-            .col-md-12.mb-4.mb-md-0
+            .col-md-12.mb-md-0.order-2.lg-order-1
               p Consiste en identificar, recopilar y acceder a fuentes de datos relevantes para el problema a resolver. Esto puede implicar el uso de bases de datos públicas, API (Interfaz de Programación de Aplicaciones), archivos locales o flujos en tiempo real.
-            .col-md-12
+            .col-md-12.order-1.lg-order-2.mb-4 
               figure
                 img(src='@/assets/curso/temas/tema1/img3.png', alt='Texto que describa la imagen')
           .row(numero="B" titulo="Partición de los datos")
-            .col-md-12.mb-4.mb-md-0
+            .col-md-12.mb-md-0.order-2.lg-order-1
               p Se divide el conjunto de datos en subconjuntos, comúnmente en un 80 % para entrenamiento y un 20 % para prueba. En algunos casos también se utiliza un conjunto de validación para ajustar hiperparámetros sin sesgar la evaluación final.
-            .col-md-12
+            .col-md-12.order-1.lg-order-2.mb-4  
               figure
                 img(src='@/assets/curso/temas/tema1/img4.png', alt='Texto que describa la imagen')
           .row(numero="C" titulo="Exploración y visualización de los datos")
-            .col-md-12.mb-4.mb-md-0
+            .col-md-12.mb-md-0.order-2.lg-order-1
               p Permite comprender la distribución, relaciones y patrones presentes en los datos. Esta fase ayuda a identificar valores atípicos, datos faltantes y posibles errores.
-            .col-md-12
+            .col-md-12.order-1.lg-order-2.mb-4 
               figure
                 img(src='@/assets/curso/temas/tema1/img5.png', alt='Texto que describa la imagen')
           .row(numero="D" titulo="Preparación y preprocesamiento")
-            .col-md-12.mb-4.mb-md-0
+            .col-md-12.mb-md-0.order-2.lg-order-1
               p Incluye tareas como limpieza, transformación, codificación de variables categóricas (por ejemplo, mediante #[i one-hot encoding]), escalado de características numéricas y tratamiento de valores nulos o atípicos. El uso de pipelines facilita la automatización y reproducibilidad de este proceso.
-            .col-md-12
+            .col-md-12.order-1.lg-order-2.mb-4      
               figure
                 img(src='@/assets/curso/temas/tema1/img6.png', alt='Texto que describa la imagen')
           .row(numero="E" titulo="Selección y entrenamiento del modelo")
-            .col-md-12.mb-4.mb-md-0
+            .col-md-12.mb-md-0.order-2.lg-order-1
               p Con base en la naturaleza del problema (clasificación, regresión, #[i clustering], etc.), se elige el algoritmo más adecuado y se entrena con el conjunto de datos preparado.
-            .col-md-12
+            .col-md-12.order-1.lg-order-2.mb-4         
               figure
                 img(src='@/assets/curso/temas/tema1/img7.png', alt='Texto que describa la imagen')
           .row(numero="F" titulo="Evaluación del modelo")
-            .col-md-12.mb-4.mb-md-0
+            .col-md-12.mb-md-0.order-2.lg-order-1
               p Se mide el rendimiento utilizando métricas apropiadas como la precisión, el error cuadrático medio (RMSE), el F1-score, entre otras, dependiendo del tipo de problema.
-            .col-md-12
+            .col-md-12.order-1.lg-order-2.mb-4
               figure
                 img(src='@/assets/curso/temas/tema1/img8.png', alt='Texto que describa la imagen')
           .row(numero="G" titulo="Ajuste fino (<em>tuning</em>) del modelo")
-            .col-md-12.mb-4.mb-md-0
+            .col-md-12.mb-md-0.order-2.lg-order-1
               p Se optimizan los hiperparámetros mediante técnicas como la búsqueda en malla (#[i grid search]) o búsqueda aleatoria, con el fin de mejorar la capacidad predictiva del modelo.
-            .col-md-12
+            .col-md-12.order-1.lg-order-2.mb-4
               figure
                 img(src='@/assets/curso/temas/tema1/img9.png', alt='Texto que describa la imagen')
           .row(numero="H" titulo="Despliegue y mantenimiento")
-            .col-md-12.mb-4.mb-md-0
+            .col-md-12.mb-md-0.order-2.lg-order-1
               p El modelo entrenado se integra en una aplicación o sistema productivo. Posteriormente, debe ser monitoreado para detectar degradaciones en su rendimiento y actualizarse cuando sea necesario.
-            .col-md-12
+            .col-md-12.order-1.lg-order-2.mb-4
               figure
                 img(src='@/assets/curso/temas/tema1/img10.png', alt='Texto que describa la imagen')
     .row.justify-content-center.align-items-center
@@ -96,11 +96,11 @@
           figure
             img(src='@/assets/curso/temas/tema1/img11.png', alt='Texto que describa la imagen')
         .col-7
-          p La codificación se refiere a la conversión de variables categóricas en representaciones numéricas. Esta transformación es necesaria, ya que muchos algoritmos de aprendizaje automático requieren datos numéricos para funcionar de manera óptima (Viedma, 2018). Una técnica común es one-hot encoding, que genera columnas binarias para cada categoría, asignando “1” a la categoría presente y “0” a las demás. Esta técnica es especialmente útil cuando se trabaja con variables categóricas nominales (Géron, 2020).
-          p.mb-4 En cuanto a la normalización, Pyle (1999) la define como el proceso de escalar los valores de las variables numéricas a un rango similar. Esta práctica evita que variables con rangos amplios dominen otras durante el entrenamiento de modelos. Una estrategia común es escalar los valores entre 0 y 1. Alternativamente, se puede aplicar la estandarización, ajustando las variables para que tengan una media de cero y una desviación estándar de uno (Géron, 2020).
+          p La #[b codificación] se refiere a la conversión de variables categóricas en representaciones numéricas. Esta transformación es necesaria, ya que muchos algoritmos de aprendizaje automático requieren datos numéricos para funcionar de manera óptima (Viedma, 2018). Una técnica común es one-hot encoding, que genera columnas binarias para cada categoría, asignando “1” a la categoría presente y “0” a las demás. Esta técnica es especialmente útil cuando se trabaja con variables categóricas nominales (Géron, 2020).
+          p.mb-4 En cuanto a la #[b normalización], Pyle (1999) la define como el proceso de escalar los valores de las variables numéricas a un rango similar. Esta práctica evita que variables con rangos amplios dominen otras durante el entrenamiento de modelos. Una estrategia común es escalar los valores entre 0 y 1. Alternativamente, se puede aplicar la estandarización, ajustando las variables para que tengan una media de cero y una desviación estándar de uno (Géron, 2020).
     .row.justify-content-center.align-items-center.mb-4
       .col-10.mb-4
-        .cajon.color-primario.p-4
+        .cajon.color-secundario.p-4
           p.mb-0 En redes neuronales profundas, es frecuente utilizar la normalización por lotes (batch normalization), que reparametriza las capas de una red para estabilizar y acelerar el entrenamiento. Esta técnica ajusta las activaciones de cada unidad restando la media y dividiendo entre la desviación estándar del minibatch (Goodfellow et al., 2016).
       .col-10
         p La siguiente figura, describe cómo diferentes métodos de normalización pueden modificar la representación de los datos y su impacto en el análisis de patrones:
@@ -118,12 +118,12 @@
           img(src='@/assets/curso/temas/tema1/img12.svg', alt='En la figura 1, se presenta la comparación entre dos gráficos de dispersión: el primero con datos normalizados por rango, y el segundo los mismos datos con una transformación más completa, evidenciando mejor estructura y agrupamiento.')
           figcaption Nota. Tomado de Pyle (1999).
     p El gráfico izquierdo presenta una normalización simple en rango, lo que reduce la varianza de escala entre atributos, mientras que el gráfico derecho aplica una normalización más profunda, redistribuyendo valores para mejorar la estructura interna de los datos. Esto permite detectar clústeres, definir fronteras y ubicar vecinos más cercanos, lo cual incrementa la eficiencia e interpretabilidad de los algoritmos.
-    p.mb-4 El enriquecimiento de datos, por su parte, consiste en generar nuevas características a partir de las existentes, con el fin de hacer que el conjunto de datos sea más informativo y útil para el modelo. Esta práctica puede mejorar significativamente la precisión y capacidad de generalización (Goodfellow et al., 2016).
+    p.mb-4 El #[b enriquecimiento] de datos, por su parte, consiste en generar nuevas características a partir de las existentes, con el fin de hacer que el conjunto de datos sea más informativo y útil para el modelo. Esta práctica puede mejorar significativamente la precisión y capacidad de generalización (Goodfellow et al., 2016).
     .row.justify-content-center.align-items-center
       .col-lg-10
         .cajon.color-primario.p-4
           .row.justify-content-center.align-items-center
-            .col-lg-2
+            .col-lg-2.col-md-4.col-sm-4.col-6.mb-4
               figure
                 img(src='@/assets/curso/temas/tema1/img13.svg', alt='')
             .col-lg-10

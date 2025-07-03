@@ -44,7 +44,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Una preparación adecuada mejora la precisión del modelo y evita errores como el sobreajuste.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 2,
@@ -66,7 +67,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Esto permite que los algoritmos de aprendizaje automático trabajen correctamente con datos categóricos.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 3,
@@ -88,7 +90,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Esta técnica es importante para algoritmos sensibles a la escala de los datos, como SVM o regresión logística.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 4,
@@ -109,7 +112,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Antes de eliminar, deben analizarse ya que pueden representar información importante o errores de medición.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 5,
@@ -131,7 +135,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. El enriquecimiento crea nuevas características que pueden mejorar el rendimiento del modelo.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 6,
@@ -153,7 +158,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Permite mejorar el rendimiento sin usar el conjunto de prueba repetidamente.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 7,
@@ -175,7 +181,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Hold-out divide una sola vez el conjunto de datos, típicamente en 70 % entrenamiento y 30 % prueba.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 8,
@@ -197,7 +204,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Ayuda a reducir el sobreajuste y proporciona una evaluación más robusta.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 9,
@@ -219,7 +227,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Esto facilita el aprendizaje del modelo y evita sesgos hacia una clase dominante.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 10,
@@ -241,12 +250,13 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Es especialmente útil cuando existe un desequilibrio en las clases.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 11,
           texto:
-            'Los pipelines de Scikit-learn permiten automatizar el flujo de transformación y entrenamiento de modelos.',
+            'Los <em>pipelines</em> de Scikit-learn permiten automatizar el flujo de transformación y entrenamiento de modelos.',
           imagen: require('@/assets/actividad/imagen1.png'),
           barajarRespuestas: true,
           opciones: [
@@ -263,7 +273,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Facilitan un procesamiento estructurado y reproducible de los datos.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 12,
@@ -285,7 +296,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. MLflow permite registrar modelos, métricas, parámetros y artefactos de forma automatizada.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 13,
@@ -307,7 +319,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Al estandarizar los procesos se garantiza mayor eficiencia y trazabilidad.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 14,
@@ -329,7 +342,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Una tasa de aprendizaje alta puede causar que el modelo no converja adecuadamente.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 15,
@@ -351,7 +365,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Es sensible a errores grandes y se usa para medir la precisión de las predicciones.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 16,
@@ -373,12 +388,13 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. La matriz de confusión es usada en clasificación para evaluar el desempeño del modelo.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 17,
           texto:
-            'En los pipelines de Scikit-learn, el paso final siempre debe ser un estimador.',
+            'En los <em>pipelines</em> de Scikit-learn, el paso final siempre debe ser un estimador.',
           imagen: require('@/assets/actividad/imagen2.png'),
           barajarRespuestas: true,
           opciones: [
@@ -395,7 +411,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. El paso final debe ser el que realiza predicción, como una regresión o clasificación.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 18,
@@ -417,7 +434,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Las herramientas ETL son clave para automatizar la extracción, transformación y carga de datos.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 19,
@@ -439,7 +457,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Implementar marcos de gobernanza asegura trazabilidad, calidad y cumplimiento normativo.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 20,
@@ -461,7 +480,8 @@ export default {
           ],
           mensaje_correcto:
             'Excelente trabajo. Automatizar permite reducir errores, ahorrar tiempo y mejorar la eficiencia en proyectos de ML.',
-          mensaje_incorrecto: '',
+          mensaje_incorrecto:
+            'Revise nuevamente el contenido del componente formativo.',
         },
       ],
       mensaje_final_aprobado:
