@@ -135,7 +135,7 @@
     p El tratamiento de valores atípicos, también conocidos como #[i outliers], es una etapa clave en la preparación de datos para modelos de aprendizaje automático. Estos valores, que se alejan significativamente de la tendencia general de los datos, pueden surgir por errores de medición, variabilidad inherente del sistema o por fenómenos excepcionales. Si no se gestionan adecuadamente, pueden distorsionar el entrenamiento del modelo, afectar la precisión de las predicciones y comprometer la validez de los análisis.
     p.mb-4 El proceso de tratamiento de #[i outliers] incluye los siguientes pasos:
     .tarjeta--container.row.mb-5
-        .col-md.tarjeta.color-primario.p-5
+        .col-lg.tarjeta.color-primario.p-5
           .row.justify-content-center.mb-4
             .col-4
               figure
@@ -143,14 +143,14 @@
           h4.text-center Identificación de valores atípicos
           p Se utilizan técnicas estadísticas y gráficas para detectar datos inusuales, como los diagramas de caja (#[i boxplots]), la desviación estándar, el método del rango intercuartílico (IQR) y la puntuación z (z-score).
   
-        .col-md.tarjeta.color-secundario.p-5
+        .col-lg.tarjeta.color-secundario.p-5
           .row.justify-content-center.mb-4
             .col-4
               figure
                 img(src='@/assets/curso/temas/tema1/img15.svg', alt='Texto que describa la imagen')
           h4.text-center Análisis contextual
           p Una vez detectados, es esencial comprender el origen de estos valores. Pueden ser errores de entrada o extremos legítimos que contienen información valiosa para el modelo. El conocimiento del dominio es fundamental para tomar decisiones informadas.
-        .col-md.tarjeta.color-acento-contenido.p-5
+        .col-lg.tarjeta.color-acento-contenido.p-5
           .row.justify-content-center.mb-4
             .col-4
               figure

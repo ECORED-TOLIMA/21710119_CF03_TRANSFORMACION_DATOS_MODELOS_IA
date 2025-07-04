@@ -105,7 +105,7 @@
             img(src='@/assets/curso/temas/tema3/img12.svg', alt='Texto que describa la imagen')
       .row.justify-content-center.align-items-center
         .col-lg-10
-          p Este fragmento configura un pipeline con dos pasos:
+          p Este fragmento configura un #[i pipeline] con dos pasos:
           ul.lista-ul--color
             li
               i.fas.fa-check
@@ -154,7 +154,7 @@
       .col-lg-10
         figure
           img(src='@/assets/curso/temas/tema3/img16.png', alt='En figura 2 contiene la interfaz gráfica de MLflow, la cual presenta ejecuciones de modelos con diferentes combinaciones de hiperparámetros para predecir la demanda de productos.')
-          figcaption Nota. Tomado de https://mlflow.org/#core-concepts
+          figcaption Nota. Tomado de <a href="https://mlflow.org/#core-concepts" target="_blank">mlflow.org</a>
     .row.justify-content-center.align-items-center.mb-4
       .col-lg-10
         .cajon.color-secundario.p-4
@@ -286,7 +286,7 @@
           .row(titulo="")
             .col-md-6.mb-4.mb-md-0
               h4 Implementación de #[i pipelines] de datos
-              p Un #[i pipeline] es una serie de componentes encadenados para limpiar, transformar, almacenar y aplicar algoritmos de inteligencia artificial a los datos. Un ejemplo es el pipeline de Scikit-learn, herramienta que permite estructurar un flujo de trabajo completo, automatizando desde la transformación de datos hasta la predicción, garantizando así la coherencia entre el entrenamiento y la inferencia.
+              p Un #[i pipeline] es una serie de componentes encadenados para limpiar, transformar, almacenar y aplicar algoritmos de inteligencia artificial a los datos. Un ejemplo es el #[i pipeline] de Scikit-learn, herramienta que permite estructurar un flujo de trabajo completo, automatizando desde la transformación de datos hasta la predicción, garantizando así la coherencia entre el entrenamiento y la inferencia.
             .col-md-6
               figure
                 img(src='@/assets/curso/temas/tema3/img20.png', alt='Texto que describa la imagen')
