@@ -106,7 +106,7 @@
         p La siguiente figura, describe cómo diferentes métodos de normalización pueden modificar la representación de los datos y su impacto en el análisis de patrones:
     .titulo-sexto.color-acento-contenido.offset-1(data-aos="zoom-in")
       h5 Figura 1.
-      span  #[i Importancia de normalizar datos ]
+      span  #[ Importancia de normalizar datos ]
 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-5.movil(data-aos="zoom-in")

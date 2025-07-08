@@ -21,7 +21,7 @@
           .tarjeta.tarjeta--azul
             .p-4
               h4 División en conjuntos de entrenamiento y prueba
-              p La práctica más común consiste en separar el conjunto de datos en dos grupos: uno para entrenar el modelo (training set) y otro para evaluarlo (test set). El conjunto de entrenamiento se utiliza para que el modelo aprenda los patrones de los datos, mientras que el conjunto de prueba sirve para verificar qué tan bien el modelo generaliza ante nuevos datos no vistos durante el entrenamiento. Una división típica es de 80 % para entrenamiento y 20 % para prueba, aunque esta proporción puede variar según el tamaño y la naturaleza del conjunto de datos.
+              p La práctica más común consiste en separar el conjunto de datos en dos grupos: uno para entrenar el modelo (#[i training set]) y otro para evaluarlo (#[i test set]). El conjunto de entrenamiento se utiliza para que el modelo aprenda los patrones de los datos, mientras que el conjunto de prueba sirve para verificar qué tan bien el modelo generaliza ante nuevos datos no vistos durante el entrenamiento. Una división típica es de 80 % para entrenamiento y 20 % para prueba, aunque esta proporción puede variar según el tamaño y la naturaleza del conjunto de datos.
       .col-lg-10(data-aos="zoom-in")
         .tarjeta-avatar-b.mb-5
           .tarjeta-avatar-b__img
@@ -29,7 +29,7 @@
           .tarjeta.tarjeta--azul
             .p-4
               h4 Conjunto de validación (opcional)
-              p En muchos casos, además del conjunto de prueba, se utiliza un conjunto de validación (validation set), el cual permite ajustar hiperparámetros, seleccionar entre distintos modelos y prevenir el sobreajuste. Esto es especialmente útil cuando se prueba una gran cantidad de configuraciones. Una práctica común consiste en reservar un 5 % del total de los datos como conjunto de validación y utilizar el restante 15 % como prueba. En entornos dinámicos, como el financiero, la validación puede hacerse en tiempo real, observando cómo el modelo se comporta al ser implementado.
+              p En muchos casos, además del conjunto de prueba, se utiliza un conjunto de validación (#[i validation set]), el cual permite ajustar hiperparámetros, seleccionar entre distintos modelos y prevenir el sobreajuste. Esto es especialmente útil cuando se prueba una gran cantidad de configuraciones. Una práctica común consiste en reservar un 5 % del total de los datos como conjunto de validación y utilizar el restante 15 % como prueba. En entornos dinámicos, como el financiero, la validación puede hacerse en tiempo real, observando cómo el modelo se comporta al ser implementado.
       .col-lg-10(data-aos="zoom-in")
         .tarjeta-avatar-b.mb-5
           .tarjeta-avatar-b__img

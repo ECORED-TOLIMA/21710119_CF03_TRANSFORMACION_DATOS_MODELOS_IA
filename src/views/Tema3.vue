@@ -125,7 +125,6 @@
         .col-lg-3.col-md-6.mb-md-4.col-6.mb-4
           figure
             img(src='@/assets/curso/temas/tema3/img14.svg', alt='Texto que describa la imagen')
-    p.mb-4 El código anterior demuestra un flujo completo, desde la carga del conjunto de datos hasta la predicción. Durante el proceso, se garantiza que las transformaciones se apliquen correctamente sin intervención adicional del usuario.
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-3.col-md-6.col-sm-5.mb-md-4.md-mb-sm-4.col-6.mb-4
         figure
@@ -149,7 +148,7 @@
             | Integrarse con bibliotecas como Scikit-learn, TensorFlow o Spark.
     .titulo-sexto.color-acento-contenido.offset-1(data-aos="zoom-in")
       h5 Figura 2.
-      span  #[i Ejemplo de proyecto ML en MLflow ]
+      span  Ejemplo de proyecto ML en MLflow
     .row.justify-content-center.align-items-center.mb-4
       .col-lg-10
         figure
@@ -229,14 +228,14 @@
     p.mb-4 Con el fin de consolidar la comprensión del flujo presentado en el código anterior, a continuación, se ofrece un resumen conceptual de los principales componentes utilizados. Esta síntesis permite identificar el propósito específico de cada elemento dentro del proceso de evaluación automatizada con MLflow y OpenAI, facilitando su comprensión y posible reutilización en proyectos similares. La tabla 1 presenta de forma esquemática estos componentes y su función en el flujo de trabajo.
     .titulo-sexto.color-acento-contenido.offset-1(data-aos="zoom-in")
       h5 Tabla 1.
-      span  #[i Resumen conceptual de componentes ]
+      span  Resumen conceptual de componentes
     .row.justify-content-center.align-items-center.mb-4
       .col-lg-10
         .tabla-b.color-acento-contenido.mb-4(data-aos="fade-left")
           table(alt="")
             thead
               tr
-                th Componete	
+                th Componente	
                 th Propósito
             tbody
               tr
