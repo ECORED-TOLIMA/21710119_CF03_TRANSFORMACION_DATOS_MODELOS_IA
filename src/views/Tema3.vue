@@ -148,7 +148,7 @@
             | Integrarse con bibliotecas como Scikit-learn, TensorFlow o Spark.
     .titulo-sexto.color-acento-contenido.offset-1(data-aos="zoom-in")
       h5 Figura 2.
-      span  Ejemplo de proyecto ML en MLflow
+      span  #[i Ejemplo de proyecto ML en MLflow]
     .row.justify-content-center.align-items-center.mb-4
       .col-lg-10
         figure
@@ -228,7 +228,7 @@
     p.mb-4 Con el fin de consolidar la comprensión del flujo presentado en el código anterior, a continuación, se ofrece un resumen conceptual de los principales componentes utilizados. Esta síntesis permite identificar el propósito específico de cada elemento dentro del proceso de evaluación automatizada con MLflow y OpenAI, facilitando su comprensión y posible reutilización en proyectos similares. La tabla 1 presenta de forma esquemática estos componentes y su función en el flujo de trabajo.
     .titulo-sexto.color-acento-contenido.offset-1(data-aos="zoom-in")
       h5 Tabla 1.
-      span  Resumen conceptual de componentes
+      span  #[i Resumen conceptual de componentes]
     .row.justify-content-center.align-items-center.mb-4
       .col-lg-10
         .tabla-b.color-acento-contenido.mb-4(data-aos="fade-left")
