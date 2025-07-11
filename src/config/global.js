@@ -2,6 +2,8 @@ export default {
   global: {
     componenteFormativo:
       'Visualización, partición y automatización en el procesamiento de datos',
+    Name:
+      'Visualización, partición y automatización en el procesamiento de datos',
     descripcionCurso:
       'Este componente aborda el ciclo de vida del aprendizaje automático, incluyendo la limpieza, transformación y evaluación de datos. Presenta técnicas de modelado, automatización de procesos, visualización de resultados y buenas prácticas para la gestión eficiente de datos en proyectos de inteligencia artificial.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
